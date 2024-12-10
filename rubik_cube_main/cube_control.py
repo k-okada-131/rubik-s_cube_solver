@@ -445,11 +445,6 @@ class Control:
 
 
 if __name__ == "__main__":
-    # ans = "F2B2 L1 U2D3 F2 R1 F1B1 D2 R3 U2 F2 D3 L2 U2D1 R2 B2 R2L2 D2"
-    # ans = "U1D1 R2 F1B3 D2 R1 U2 L2 F2B2 D3 F2 D3 R2L2 F2 R2L2 D3 R2 U2D3"
-    # ans = "F1B3 U3D3 L1 U3 B2 U3 R2 B2 L2 U3D3 B2 U1D2 L2 U1"
-    # ans = "R1 F1B3 U3D1 L1 U1 R2L2 U2 B2 U3D2 R2 D1 R2 B2 D1 F2B2"
-    # ans = "F3 U2D1 F1B3 U3D1 L1 U2 R2 F2B2 L2 F2B2 U2 F2B2"
     ans = "U3 B3 R2L3 U3 R1L2 D3 R3 F1 U1D3 R2L2 D1 L2 D3 F2 U3 F2B2 U2D3 L2 "
 
     control = Control()
