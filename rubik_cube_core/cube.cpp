@@ -2,21 +2,24 @@
 
 namespace rubik_cube{
     Cube moves[COUNT_CUBE_PH1];
-    
+    // コーナーパーツを操作
+    // c1：操作前のキューブの状態
+    // move：行う操作
+    // into：操作後のキューブの状態
     void corner::mul(const Cube& c1, const Cube& move, Cube& into) {
         for (int i = 0; i < corner::COUNT; i++) {
             into.cp[i] = c1.cp[move.cp[i]];
             into.co[i] = (c1.co[move.cp[i]] + move.co[i]) % 3;
         }
     }
-
+    // エッジパーツを操作
     void edge::mul(const Cube& c1, const Cube& move, Cube& into) {
         for (int i = 0; i < edge::COUNT; i++) {
             into.ep[i] = c1.ep[move.ep[i]];
             into.eo[i] = (c1.eo[move.ep[i]] + move.eo[i]) % 2;
         }
     }
-
+    // コーナーパーツとエッジパーツを操作
     void mul(const Cube& c1, const Cube& c2, Cube& into) {
         corner::mul(c1, c2, into);
         edge::mul(c1, c2, into);
