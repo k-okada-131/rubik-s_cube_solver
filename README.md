@@ -1,5 +1,10 @@
 # 2024年度ルービックキューブソルバープログラム
 
+
+https://github.com/user-attachments/assets/ece89116-8ad8-4da7-bec1-931dd0935b07
+
+
+
 ----
 ## プロジェクト構成
 
